@@ -51,11 +51,21 @@ body {
   overflow-x: hidden;
   color: var(--text);
   background:
-    radial-gradient(ellipse at 15% 18%, rgba(29, 74, 147, 0.22), transparent 38rem),
-    radial-gradient(ellipse at 86% 50%, rgba(40, 74, 144, 0.14), transparent 42rem),
+    radial-gradient(
+      ellipse at 15% 18%,
+      rgba(29, 74, 147, 0.22),
+      transparent 38rem
+    ),
+    radial-gradient(
+      ellipse at 86% 50%,
+      rgba(40, 74, 144, 0.14),
+      transparent 42rem
+    ),
     var(--bg);
   line-height: 1.6;
-  transition: color 220ms ease, background-color 220ms ease;
+  transition:
+    color 220ms ease,
+    background-color 220ms ease;
 }
 
 body::before {
@@ -63,11 +73,31 @@ body::before {
   z-index: -1;
   inset: 0;
   background-image:
-    radial-gradient(1px 1px at 15% 25%, rgba(214, 228, 255, 0.7) 45%, transparent 60%),
-    radial-gradient(1px 1px at 55% 14%, rgba(214, 228, 255, 0.5) 45%, transparent 60%),
-    radial-gradient(1px 1px at 84% 36%, rgba(214, 228, 255, 0.6) 45%, transparent 60%),
-    radial-gradient(1px 1px at 34% 72%, rgba(214, 228, 255, 0.4) 45%, transparent 60%),
-    radial-gradient(1px 1px at 74% 88%, rgba(214, 228, 255, 0.5) 45%, transparent 60%);
+    radial-gradient(
+      1px 1px at 15% 25%,
+      rgba(214, 228, 255, 0.7) 45%,
+      transparent 60%
+    ),
+    radial-gradient(
+      1px 1px at 55% 14%,
+      rgba(214, 228, 255, 0.5) 45%,
+      transparent 60%
+    ),
+    radial-gradient(
+      1px 1px at 84% 36%,
+      rgba(214, 228, 255, 0.6) 45%,
+      transparent 60%
+    ),
+    radial-gradient(
+      1px 1px at 34% 72%,
+      rgba(214, 228, 255, 0.4) 45%,
+      transparent 60%
+    ),
+    radial-gradient(
+      1px 1px at 74% 88%,
+      rgba(214, 228, 255, 0.5) 45%,
+      transparent 60%
+    );
   background-size: 420px 360px;
   content: "";
   pointer-events: none;
@@ -215,7 +245,10 @@ a:focus-visible {
   border-radius: 11px;
   color: var(--muted);
   background: transparent;
-  transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
 }
 
 .language-button {
@@ -368,7 +401,10 @@ h1 span {
   border-radius: 10px;
   font-size: 13px;
   font-weight: 600;
-  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
 }
 
 .button:hover {
@@ -413,7 +449,9 @@ h1 span {
   height: 27px;
   object-fit: contain;
   opacity: 0.85;
-  transition: transform 180ms ease, opacity 180ms ease;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
 }
 
 .tech-logos img:hover {
@@ -437,8 +475,14 @@ h1 span {
   overflow: hidden;
   border: 1px solid rgba(147, 182, 255, 0.55);
   border-radius: 50%;
-  background: linear-gradient(145deg, rgba(106, 149, 240, 0.25), rgba(255, 255, 255, 0.04));
-  box-shadow: 0 0 0 12px rgba(96, 141, 237, 0.035), 0 0 90px var(--accent-glow);
+  background: linear-gradient(
+    145deg,
+    rgba(106, 149, 240, 0.25),
+    rgba(255, 255, 255, 0.04)
+  );
+  box-shadow:
+    0 0 0 12px rgba(96, 141, 237, 0.035),
+    0 0 90px var(--accent-glow);
 }
 
 .portrait-frame::before {
@@ -566,7 +610,9 @@ h1 span {
   height: 260px;
   border: 1px solid var(--border);
   border-radius: 50%;
-  box-shadow: 0 0 0 24px rgba(118, 160, 242, 0.025), 0 0 0 50px rgba(118, 160, 242, 0.02);
+  box-shadow:
+    0 0 0 24px rgba(118, 160, 242, 0.025),
+    0 0 0 50px rgba(118, 160, 242, 0.02);
   content: "";
 }
 
@@ -743,7 +789,10 @@ h1 span {
   border-radius: 16px;
   background: var(--panel);
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
-  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
 }
 
 .project-card::before {
@@ -847,7 +896,10 @@ h1 span {
   color: var(--muted);
   background: transparent;
   font-size: 12px;
-  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease;
 }
 
 .more-button:hover {
@@ -914,7 +966,10 @@ h1 span {
   border-radius: 10px;
   color: var(--muted);
   font-size: 12px;
-  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease;
 }
 
 .contact-link:hover {
@@ -972,7 +1027,9 @@ h1 span {
 .reveal {
   transform: translateY(18px);
   opacity: 0;
-  transition: transform 650ms ease, opacity 650ms ease;
+  transition:
+    transform 650ms ease,
+    opacity 650ms ease;
 }
 
 .reveal.is-visible {
